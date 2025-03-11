@@ -1477,6 +1477,160 @@ h3 {
 }
 
 
+/* Gallery Grid Layout */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spacing between items */
+}
+
+/* Single Performer Card */
+.single_performer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single_performer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Thumbnail Image */
+.thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.single_performer:hover .thumb img {
+  transform: scale(1.1);
+}
+
+
+
+/* Testimonials Section */
+.testimonials_area {
+  padding: 100px 0;
+  background: #f9f9f9; /* Light background */
+}
+
+.testimonials_bg {
+  background: url('img/testimonials_bg.jpg') no-repeat center center/cover; /* Add a background image if needed */
+}
+
+.section_title h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section_title p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Testimonial Card */
+.single_testimonial {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single_testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quote_icon {
+  font-size: 2rem;
+  color: #ff6b6b; /* Accent color */
+  margin-bottom: 20px;
+}
+
+.testimonial_text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.testimonial_author {
+  display: flex;
+  align-items: center;
+}
+
+.author_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.author_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author_info h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.author_info span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+
+
+
+
+/* Overlay Text */
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  transition: bottom 0.3s ease;
+}
+
+.single_performer:hover .overlay {
+  bottom: 0;
+}
+
+.overlay h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.overlay span {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Tilt Effect (if using tilt.js) */
+[data-tilt] {
+  transition: transform 0.3s ease;
+}
+
 
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
